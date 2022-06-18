@@ -1,0 +1,41 @@
+.bookshelf {
+  padding: 0 10px 20px;
+}
+
+@media (min-width: 600px) {
+  .bookshelf {
+    padding: 0 20px 40px;
+  }
+}
+
+.bookshelf-title {
+  border-bottom: 1px solid #dedede;
+  width: max-content;
+  text-transform: uppercase;
+  margin: 5px auto;
+  padding: 5px 0;
+  color: #7f6d60;
+}
+.bookshelf-books {
+  text-align: center;
+}
+
+.books-grid {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 15px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1em;
+}
+@media (min-width: 600px) {
+  .books-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.books-grid li {
+  padding: 10px 15px;
+  text-align: left;
+}
