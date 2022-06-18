@@ -4,21 +4,18 @@ import Book from "./../Book";
 //style
 import "./style.css";
 
-const BookShelf = () => {
+const BookShelf = ({title="",bookList = []}) => {
     return (
         <div className="bookshelf">
-            <h2 className="bookshelf-title">Read</h2>
+            {title !== "" && <h2 className="bookshelf-title">{title}</h2>}
             <div className="bookshelf-books">
                 <ol className="books-grid">
-                    <li>
-                        <Book />
-                    </li>
-                    <li>
-                        <Book />
-                    </li>
-                    <li>
-                        <Book />
-                    </li>
+                    {bookList.map((book, idx) =>
+                        <Book
+                            key={idx}
+                            book={book}
+                        />
+                    )}
                 </ol>
             </div>
         </div>
