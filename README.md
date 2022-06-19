@@ -6,7 +6,21 @@ This is the MyReads: A Book Tracking App project
 
 ## Overview
 
-- BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
+- BooksAPI.js A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
+
+## Installation
+
+-To install app-dependencies:
+
+```
+npm install;
+```
+
+-To start the server:
+
+```
+npm start;
+```
 
 ## The challenge
 

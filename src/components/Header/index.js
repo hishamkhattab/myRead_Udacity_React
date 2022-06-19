@@ -1,12 +1,12 @@
-//style
-import "./style.css";
+// style
+import './style.css';
 
-const Header = () => {
-    return (
-        <div className="list-books-title">
-            <h1>MyReads</h1>
-        </div>
-    );
+function Header() {
+  return (
+    <div className="list-books-title">
+      <h1>MyReads</h1>
+    </div>
+  );
 }
- 
+
 export default Header;
