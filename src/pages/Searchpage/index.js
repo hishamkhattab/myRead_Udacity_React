@@ -41,7 +41,7 @@ const Searchpage = () => {
                     Close
                 </Link>
                 <div className="search-books-input-wrapper">
-                <input
+                    <input
                         type="text"
                         ref={searchRef}
                         value={searchParam}
@@ -51,7 +51,7 @@ const Searchpage = () => {
                 </div>
             </div>
             <div className="search-books-results">
-            {isLoading && <Loading/>}
+                {isLoading && <Loading />}
                 {!isLoading && searchBookList.length > 0 &&
                     <BookShelf bookList={searchBookList.filter(book => book.imageLinks)} />
                 }

@@ -9,6 +9,7 @@ import { updateBook } from "../../store/bookSlice";
 import "./style.css";
 
 const Book = ({ book }) => {
+
     const { allBooks } = useSelector(state => state.books);
     const dispatch = useDispatch();
 
@@ -27,6 +28,9 @@ const Book = ({ book }) => {
             setBookState("none")
         }
     }, [allBooks, book.id]);
+
+
+    
     return (
         <div className="book">
             <div className="book-top">
