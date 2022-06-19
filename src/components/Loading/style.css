@@ -1,0 +1,49 @@
+.loading {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 7px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.loading span:first-of-type,
+.loading span:last-of-type {
+  animation: load1 1.5s infinite ease-in-out;
+}
+
+.loading span:nth-of-type(2) {
+  animation: load2 1.5s infinite ease-in-out;
+  animation-delay: 1s;
+}
+
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    transform: scale(1.5);
+  }
+  40% {
+    transform: scale(1);
+    opacity: 20%;
+  }
+}
+
+@keyframes load2 {
+  0%,
+  80%,
+  100% {
+    transform: scale(2);
+  }
+  40% {
+    transform: scale(1);
+    opacity: 20%;
+  }
+}

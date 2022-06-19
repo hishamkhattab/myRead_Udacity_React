@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 //components
 import BookShelf from "../../components/BookShelf";
+import Loading from "./../../components/Loading";
 
 //reducers
 import { searchBook } from "../../store/bookSlice";
@@ -50,7 +51,7 @@ const Searchpage = () => {
                 </div>
             </div>
             <div className="search-books-results">
-            {isLoading && <p>Loading ....</p>}
+            {isLoading && <Loading/>}
                 {!isLoading && searchBookList.length > 0 &&
                     <BookShelf bookList={searchBookList.filter(book => book.imageLinks)} />
                 }
