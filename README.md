@@ -4,11 +4,20 @@ This is the MyReads: A Book Tracking App project
 
 - start the development server with `npm start`
 
-## Overview
+## Project Description
 
-- BooksAPI.js A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
+a bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read.
+
+### App Functionality
+
+- **Main Page** display a list of categories [Currently Reading,Wantto Read, Read].
+- Each book has a control that lets you select the shelf for that book.
+- **Search Page** that allows you to find books to add to your library.
+- Each book in **Search Page** also has a control that lets you select the shelf for that book.
 
 ## Installation
+
+- clone or download the project from [github repo] (https://github.com/hishamkhattab/myRead_Udacity_React.git)
 
 -To install app-dependencies:
 
