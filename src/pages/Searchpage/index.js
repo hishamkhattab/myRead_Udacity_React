@@ -24,11 +24,15 @@ function Searchpage() {
   }, []);
 
   useEffect(() => {
-    if (searchParam !== '') {
-      dispatch(searchBook({ query: searchParam, maxResult: 10 }));
-    } else {
-      dispatch(searchBook({ query: '', maxResult: 10 }));
-    }
+    const handler = setTimeout(() => {
+      if (searchParam !== '') {
+        dispatch(searchBook({ query: searchParam, maxResult: 10 }));
+      } else {
+        dispatch(searchBook({ query: '', maxResult: 10 }));
+      }
+    }, 1500);
+
+    return () => clearTimeout(handler);
   }, [dispatch, searchParam]);
 
   return (
