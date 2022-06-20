@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import propsTypes from 'prop-types';
 
 // components
 import Header from '../../components/Header';
@@ -31,5 +32,10 @@ function Homepage({ booksList, load }) {
     </div>
   );
 }
+
+Homepage.propsTypes = {
+  bookList: propsTypes.array,
+  load: propsTypes.bool,
+};
 
 export default Homepage;

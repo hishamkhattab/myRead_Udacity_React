@@ -1,3 +1,4 @@
+import propsTypes from 'prop-types';
 // components
 import Book from '../Book';
 
@@ -18,5 +19,10 @@ function BookShelf({ title = '', bookList = [] }) {
     </div>
   );
 }
+
+BookShelf.propsTypes = {
+  title: propsTypes.string,
+  bookList: propsTypes.array,
+};
 
 export default BookShelf;

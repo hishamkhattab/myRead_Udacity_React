@@ -14,12 +14,12 @@ import BookDetailspage from './pages/BookDetailspage';
 import './App.css';
 
 function App() {
-  const { isLoading, allBooks, updatedList } = useSelector((state) => state.books);
+  const { isLoading, allBooks } = useSelector((state) => state.books);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getAllBooks());
-  }, [dispatch, updatedList]);
+  }, [dispatch]);
 
   return (
     <BrowserRouter>

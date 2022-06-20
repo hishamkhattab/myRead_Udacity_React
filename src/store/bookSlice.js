@@ -50,7 +50,6 @@ const initialState = {
   isLoading: true,
   allBooks: [],
   searchBookList: [],
-  updatedList: [],
   bookData: {},
   error: null,
 };
@@ -114,7 +113,6 @@ const bookSlice = createSlice({
     });
     builder.addCase(updateBook.rejected, (state, action) => {
       state.isLoading = false;
-      state.updatedList = [];
       state.error = action.payload;
     });
   },
